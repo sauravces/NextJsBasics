@@ -15,12 +15,13 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const [input,setInput]=useState("");
+  const [input, setInput] = useState("");
+
   return (
-    <div>
-        <div>
-            <input value={input} onChange={e=>setInput(e.target.value)}></input>
-        </div>
+    <>
+      <div>
+        <input value={input} onChange={(e) => setInput(e.target.value)}></input>
+      </div>
       {navLinks.map((link) => {
         const isActive = pathname.startsWith(link.href);
         return (
@@ -34,6 +35,6 @@ export default function AuthLayout({
         );
       })}
       {children}
-    </div>
+    </>
   );
 }

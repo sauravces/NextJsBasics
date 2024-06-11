@@ -1,11 +1,12 @@
-export default function AuthLayout({children}:{
-    children:React.ReactNode;
-}){
-return(
+export default function AuthLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
     <>
-    <h2>Inner Layout</h2>
-    {children}
-    
+      <h2>Inner Layout</h2>
+      {children}
     </>
-)
+  );
 }
