@@ -6,6 +6,7 @@ export default function DashboardLayout({
   revenue,
   notifications,
   login,
+  
 }: {
   children: React.ReactNode;
   users: React.ReactNode;
